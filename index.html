@@ -11,41 +11,41 @@
 <body>
     <section class="main">
         <div class="switch-darkmode__container">
-            <div class="switch-darkmode__track" id="darkmodeSwitch">
+            <div class="switch-darkmode__track" id="trackButton">
                 <div class="switch-darkmode__button"></div>
             </div>
         </div>
         <div class="calculator-viewer__container">
-            <div class="viewer-formula-container">
-                <p class="formula">345+75+20</p>
+            <div class="viewer-formula-container" id="seeFormula">
             </div>
             <div class="viewer-output">
                 <p class="output">440</p>
             </div>
         </div>
         <div class="grid-buttons__container">
-            <div class="item1" id="deleteComplete">C</div>
-            <div class="item2" id="negativeSwitch">+/-</div>
-            <div class="item3" id="percent">%</div>
-            <div class="item4" id="division">/</div>
-            <div class="item5" id="sevenButton">7</div>
-            <div class="item6" id="eightButton">8</div>
-            <div class="item7" id="nineButton">9</div>
-            <div class="item8" id="multiplication">X</div>
-            <div class="item9" id="fourButton">4</div>
-            <div class="item10" id="fiveButton">5</div>
-            <div class="item11" id="sixButton">6</div>
-            <div class="item12" id="substraction">-</div>
-            <div class="item13" id="oneButton">1</div>
-            <div class="item14" id="twoButton">2</div>
-            <div class="item15" id="threeButton">3</div>
-            <div class="item16" id="sum">+</div>
-            <div class="item17" id="zeroButton">0</div>
-            <div class="item18" id="float">.</div>
-            <div class="item19" id="delete"></div>
-            <div class="item20" id="equalButton">=</div>
+            <button class="button item1" id="deleteComplete">C</button>
+            <button class="button item2" id="negativeSwitch">+/-</button>
+            <button class="button item3" id="percent">%</button>
+            <button class="button item4" id="division">/</button>
+            <button class="button item5" id="seven" value="7">7</button>
+            <button class="button item6" id="eight" value="8">8</button>
+            <button class="button item7" id="nine" value="9">9</button>
+            <button class="button item8" id="multiplication">X</button>
+            <button class="button item9" id="four" value="4">4</button>
+            <button class="button item10" id="five" value="5">5</button>
+            <button class="button item11" id="six" value="6">6</button>
+            <button class="button item12" id="substraction">-</button>
+            <button class="button item13" id="one" value="1">1</button>
+            <button class="button item14" id="two" value="2">2</button>
+            <button class="button item15" id="three" value="3">3</button>
+            <button class="button item16" id="sum">+</button>
+            <button class="button item17" id="zero" value="0">0</button>
+            <button class="button item18" id="float">.</button>
+            <button class="button item19" id="delete"></button>
+            <button class="button item20" id="equalButton">=</button>
         </div>
     </section>
-    <script src="./index.js"></script>
+    <script src="./js/darkMode.js"></script>
+    <script src="./js/mainFunc.js"></script>
 </body>
 </html>

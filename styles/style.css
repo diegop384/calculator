@@ -3,6 +3,7 @@
     --button-color: #B8C6DB;
     --font-color: #5F6671;
     --calc-button-color:#E6EBF3;
+    --back-color : linear-gradient(11.35deg, #BCFEDE -11.05%, #F5F7FA 9.85%, #C3CBE1 155.22%, #F2E1FA 157.45%, #B8C6DB 171.78%);
 }
 
 html{
@@ -18,7 +19,7 @@ body {
     display: flex;
     justify-content: center;
     color: var(--font-color);
-    background: linear-gradient(11.35deg, #BCFEDE -11.05%, #F5F7FA 9.85%, #C3CBE1 155.22%, #F2E1FA 157.45%, #B8C6DB 171.78%);
+    background: var(--back-color);
 }
 
 section {
@@ -39,15 +40,18 @@ section {
 }
 
 .switch-darkmode__track{
+    box-sizing: border-box;
     margin: 0 auto;
-    padding-left: 5px;
+    padding: 0 5px;
     width: 80%;
     height: 100%;
     display: flex;
     align-items: center;
+    justify-content: flex-start;
     background: var(--thumb-color);
-    box-shadow: inset -1px 2px 4px rgba(131, 122, 122, 0.32);
+    box-shadow: inset -1px 2px 4px rgba(131, 122, 122, 0.384);
     border-radius: 15px;
+    transition: 500ms;
 }
 
 .switch-darkmode__button{
@@ -60,6 +64,7 @@ section {
 
 .viewer-formula-container{
     width: 95%;
+    height: 15px;
     text-align: end;
     font-size: 1.4rem;
     font-weight: 600;
@@ -84,7 +89,7 @@ section {
     gap: 10px;
 }
 
-.grid-buttons__container > div{
+.button {
     width: 60px;
     height: 60px;
     display: flex;
@@ -93,10 +98,12 @@ section {
     font-size: 3.2rem;
     background: var(--calc-button-color);
     box-shadow: 0px 4px 4px rgba(235, 217, 217, 0.69);
+    border: none;
     border-radius: 15px;
+    cursor: pointer;
+    color: var(--font-color);
 }
 
-.grid-buttons__container > div:hover{
+.button:hover{
     filter: brightness(95%);
-
 }
